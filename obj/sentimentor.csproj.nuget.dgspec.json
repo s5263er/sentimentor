@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/erdem/Desktop/sentimentor/sentimentor.csproj": {}
+  },
+  "projects": {
+    "/Users/erdem/Desktop/sentimentor/sentimentor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/erdem/Desktop/sentimentor/sentimentor.csproj",
+        "projectName": "sentimentor",
+        "projectPath": "/Users/erdem/Desktop/sentimentor/sentimentor.csproj",
+        "packagesPath": "/Users/erdem/.nuget/packages/",
+        "outputPath": "/Users/erdem/Desktop/sentimentor/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/erdem/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/erdem/.vscode-dotnet-sdk/.dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

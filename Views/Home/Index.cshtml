@@ -1,0 +1,59 @@
+﻿@model List<TickerItems.Models.TickerItem>
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<div class="text-center">
+    <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Bullish Trending Stocks from Social Media Sentiments</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Change</th>
+                <th>Change Percent</th>
+                <th>Volume</th>
+                <th>Market Cap</th>
+                <th>Previous Volume</th>
+                <th>Previous Close</th>
+                <th>Sentiment</th>
+                <th>Last Sentiment</th>
+
+                <!-- Add more columns as needed... -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Rank</td>
+                    <td>@item.Name</td>
+                    <td>@item.Price</td>
+                    <td>@item.Change</td>
+                    <td>@item.ChangePercent</td>
+                    <td>@item.Volume</td>
+                    <td>@item.MarketCap</td>
+                    <td>@item.PreviousVolume</td>
+                    <td>@item.PreviousClose</td>
+                    <td>@item.Sentiment</td>
+                    <td>@item.LastSentiment</td>
+
+                    <!-- Add more columns as needed... -->
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
+</div>
+
+
+

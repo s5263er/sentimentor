@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NNQwM7dl69e62kMt/TWmHnCHLRSUPV1V+K7wm82DBJjqfRivm3/nMcTmfxNKd0yEgz/p9FkcDhc5MUXsTw6BLQ==",
+  "success": true,
+  "projectFilePath": "/Users/erdem/Desktop/sentimentor/sentimentor.csproj",
+  "expectedPackageFiles": [
+    "/Users/erdem/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
