@@ -1,18 +1,51 @@
-﻿@model List<TickerItems.Models.TickerItem>
+﻿@model List<bullish_model.Models.Trending_Bullish>
 @{
     ViewData["Title"] = "Home Page";
-
 }
 
-<div class="text-center">
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Table Demo</title>
+	<link rel="stylesheet" type="text/css" href="dark-mode.css">
+	<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 1rem;
+        background-color: #f8c6e7;
+    }
+
+    th, td {
+        padding: 0.75rem;
+        text-align: center;
+        border: 1px solid #f8c6e7; /* change border color to match background */
+        border-right-color: #343a40; /* add border-right-color to separate columns */
+
+    }
+
+    th {
+        background-color: #f8c6e7;
+        color: #343a40; /* change font color to match row titles */
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 2px solid #343a40; /* add bottom border to match other rows */
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    h1 {
+        text-align: center;
+        color: #292828; /* change title color to match table pink */
+        margin-bottom: 1rem;
+    }
+</style>
 </head>
 <body>
     <h1>Bullish Trending Stocks from Social Media Sentiments</h1>
-    <table>
+    <table class="table table-pink">
         <thead>
             <tr>
                 <th>Rank</th>
@@ -26,8 +59,6 @@
                 <th>Previous Close</th>
                 <th>Sentiment</th>
                 <th>Last Sentiment</th>
-
-                <!-- Add more columns as needed... -->
             </tr>
         </thead>
         <tbody>
@@ -45,15 +76,9 @@
                     <td>@item.PreviousClose</td>
                     <td>@item.Sentiment</td>
                     <td>@item.LastSentiment</td>
-
-                    <!-- Add more columns as needed... -->
                 </tr>
             }
         </tbody>
     </table>
 </body>
 </html>
-</div>
-
-
-

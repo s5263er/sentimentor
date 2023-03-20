@@ -1,10 +1,8 @@
-namespace bullish_model.Models;
+namespace bearish_model.Models;
 
-    public class Trending_Bullish
+    public class Trending_Bearish
     {
         public string Ticker { get; set; }
-
-
         public string Sentiment { get; set; }
         public string LastSentiment { get; set; }
         public int Rank { get; set; }
@@ -18,4 +16,4 @@ namespace bullish_model.Models;
         public double PreviousClose { get; set; }
     }
 
-    
+   
